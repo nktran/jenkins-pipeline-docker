@@ -13,9 +13,9 @@ RUN rm -f /etc/nginx/fastcgi.conf /etc/nginx/fastcgi_params && \
 EXPOSE 80
 EXPOSE 443
 
-COPY nginx/ssl /etc/nginx/ssl
-COPY nginx/snippets /etc/nginx/snippets
-COPY nginx/sites-available /etc/nginx/sites-available
+#COPY nginx/ssl /etc/nginx/ssl
+#COPY nginx/snippets /etc/nginx/snippets
+#COPY nginx/sites-available /etc/nginx/sites-available
 
 ENTRYPOINT ["/usr/sbin/nginx", "-g", "daemon off;"]
 
